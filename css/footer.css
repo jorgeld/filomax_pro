@@ -1,0 +1,73 @@
+#footer{
+	background-color: white;
+	padding-top: 80px;
+	padding-bottom:80px
+}
+
+#footer img {
+	max-width: 40px;
+}
+
+#footer h4 {
+	text-align: center;
+	margin: 0px 16px;
+    padding-top:10px; 
+	padding-bottom:25px;
+    color:rgb(8,8,8);
+}
+
+#footer p.small{
+	text-align: center;
+	color:#acb3b6;
+	max-width: 250px;
+}
+
+.footer-navigation-horizontal > li {
+    display: inline-block;
+	padding-right: 6px;
+	text-transform: uppercase;
+	font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-weight: bold;
+    font-stretch: normal;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.footer-navigation-horizontal > li > a{
+	transition: all 0.2s ease-in-out;
+	color:rgb(8,8,8);
+}
+
+.footer-navigation-horizontal > li > a:hover, .footer-navigation-horizontal > li > a:focus {
+    color: #acb3b6;
+    text-decoration: none;
+}
+
+#footer #iconos{
+    text-align: center;
+}
+
+#footer #iconos i{
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#footer #iconos i{
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#footer a{
+    color: #333 !important;
+}
+
+#footer #iconos i:hover{
+    color:#acb3b6;
+}

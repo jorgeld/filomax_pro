@@ -1,0 +1,21 @@
+
+.navbar-default{
+    transition: all 0.2 ease-in-out;
+    /**background-color: rgba(236,236,236,0.50) !important;**/
+    background-color: rgb(8,8,8) !important;
+    border:none !important;
+}
+
+.navbar-header{
+    padding:6px !important;
+}
+
+.navbar-header img{
+    max-width: 40px;
+}
+
+.navbar-header h4{
+    margin: 0px 16px;
+    padding-top:10px; 
+    color:white
+}
