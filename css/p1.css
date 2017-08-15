@@ -5,6 +5,15 @@ h1, .h1, h2, .h2, h3, .h3 , h4 ,.h4,h5,.h5{
     margin-bottom: 0px !important;
 }
 
+.padding{
+	padding: 8px;
+}
+
+.padding-margin{
+	padding: 8px;
+	margin: 8px;
+}
+
 .col-md-8{
 	padding: 0 !important
 }
@@ -330,6 +339,65 @@ article{
 	text-align: center;
 	padding: 0px 0px 16px 0px;
 }
+
+#eventos{
+	width: auto;
+	min-height: 100vh;
+	background-image: url(images/fiesta2.jpg);
+	background-size: cover;
+}
+
+.photo {
+	background: rgba(0, 0, 0, 0)
+	url(images/degradate.png) no-repeat scroll center top / cover;
+	height: 75vh;
+}
+
+.photo2 {
+	background: rgba(0, 0, 0, 0)
+	url(images/degradate2.png) no-repeat scroll center bottom / cover;
+	height: 75vh;
+}
+
+.photo h1{
+	padding:100px 8px 8px 16px;
+	color:white;
+	text-transform: uppercase;
+}
+
+.photo h4{
+	padding:16px 8px 8px 16px;
+	color:white;
+}
+
+#servicios{
+	position: relative;
+	width: 100%;
+	min-height: auto;
+	background-color: #101010;
+	padding: 100px 0;
+}
+
+#servicios .cajas{
+	border-style: solid ;
+	border-width: 1px;
+	border-color:white;
+}
+#servicios .cajas h2{
+	top:0px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	background-color: #101010;
+	color:white;
+	padding: 0px 16px 0px 16px;
+}
+#servicios .cajas p{
+	color:white;
+	padding: 35px 16px 35px 16px;
+}
+
 
 div.contenedores{padding:100px;box-shadow: 2px 3px 5px #888888;}
 

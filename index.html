@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/menu.css">
 	<link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/sidenav.css">
+    <link rel="stylesheet" href="css/alineacionDiagonal.css">
     <link rel="stylesheet" href="css/jquery.jMosaic.css">
     <link rel="stylesheet" href="recursos/bootstrap-3.3.7-dist/css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -90,36 +91,10 @@
                   <p>Sabados : 10:00 - 15:00</p>
               </article>
           </section>
-
-
-
-
-        
-        <!--<section id="firstContent">-->
-              <!--<article id="firstDir" class="col-md-4 col-xs-4 firstContenedores">-->
-                <!--<h5>DIRECCIÓN</h5>-->
-                <!--<p>-->
-                  <!--Calle Blasco de Garay 25, Madrid 28015 -->
-                <!--</p>-->
-                <!--<div class="row">-->
-                  <!--<div class="col-md-6"><p style="font-size='12px'"><img src="./images/metro.png" width="25px">&nbsp Arguelles</p></div>-->
-                  <!--<div class="col-md-6"><p><img src="./images/metro.png" width="25px">&nbsp Islas Filipinas</p></div>-->
-                <!--</div>-->
-              <!--</article>-->
-              <!--<article id="firstTlf" class="col-md-4 col-xs-4 firstContenedores">-->
-                <!--<h5>TELÉFONO DE RESERVAS</h5>-->
-                <!--<p style="font-size:35px">914 21 66 17</p>-->
-              <!--</article>-->
-              <!--<article id="firstHorario" class="col-md-4 col-xs-4 firstContenedores">-->
-                <!--<h5>HORARIO</h5>-->
-                <!--<p>Lunes a Viernes: 10:00 - 20:00</p>-->
-                <!--<p>Sabados : 10:00 - 15:00</p>-->
-              <!--</article>-->
-        <!--</section>-->
       </section>
     </section>
 
-
+<!--DIRECCION TELEFONO Y HORARIOS  --------MOVILES-------  -->
     <section class="first visible-xs">
       <section id="firstContainerMobile">
         <section>
@@ -145,6 +120,43 @@
       </section>
     </section>
 
+    <section id="servicios" class="padding">
+        <div class="row">
+            <div class="col-md-4 padding">
+                <div class="cajas">
+                    <h2>SERVICIOS</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet a diam tempor fringilla. Mauris egestas felis lacinia viverra efficitur. Proin non metus scelerisque, maximus justo eu, elementum quam. Cras augue sem, dictum vel mattis</p>
+
+                </div>
+            </div><div class="col-md-4 padding">
+                <div class="cajas">
+                    <h2>EVENTOS</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet a diam tempor fringilla. Mauris egestas felis lacinia viverra efficitur. Proin non metus scelerisque, maximus justo eu, elementum quam. Cras augue sem, dictum vel mattis</p>
+                </div>
+            </div><div class="col-md-4 padding">
+                <div class="cajas">
+                    <h2>PRECIOS</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet a diam tempor fringilla. Mauris egestas felis lacinia viverra efficitur. Proin non metus scelerisque, maximus justo eu, elementum quam. Cras augue sem, dictum vel mattis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="eventos">
+
+    <div class="photo">
+        <h1>Eventos filomax</h1>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing.</h4>
+    </div>
+
+        <div class="photo2">
+        </div>
+
+
+
+    </section>
+
+<!--PRECIOS-->
     <section id="prices">
       <h2>SERVICIOS Y PRECIOS</h2>
       <table class="table">
@@ -185,13 +197,8 @@
       </table>
     </section>
 
-
-
-
+<!--CARROUSEL PRODUCTOS-->
     <section id="products" style="padding-top: 0px;padding-bottom: 100px;background-color: #101010">
-
-
-
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -292,12 +299,6 @@
         <!--</div>-->
       <!--</div>-->
     </section>
-
-
-
-
-
-
 
     <section id="second" style="display:none">
 	    <div class="shell">
@@ -528,7 +529,7 @@
 </ul>
 </section>
 
-
+<!--FOOTER-->
 <section id="footer" name="footer">
 		<img src="images/logo1.png" class="centrado">
 		<h4>FILOMAX SHAVING COMPANY</h4> 
@@ -560,7 +561,10 @@
         interval: 4000
     })
 
-var image_array= ['url("./images/fondos/img6.jpg','url("./images/fondos/img4.jpg','url("./images/fondos/img7.jpg'];
+var image_array= [
+    'url("./images/fondos/img6.jpg',
+    'url("./images/fondos/img4.jpg',
+    'url("./images/fondos/img7.jpg'];
 var image_index = 0;
 var change_image = function(){
 
@@ -811,10 +815,9 @@ function initMap() {
   map.mapTypes.set('map_style', styledMap);
   map.setMapTypeId('map_style');
 }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA28b-bKSwbiiClvFD0oEEyaxSA53vPvhc&callback=initMap"async defer></script>
-
-  <script>
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA28b-bKSwbiiClvFD0oEEyaxSA53vPvhc&callback=initMap"async defer></script>
+<script>
     $('a').click(function(){
         $('html, body').animate({
             scrollTop: $( $(this).attr('href') ).offset().top
