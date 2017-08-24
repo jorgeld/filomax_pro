@@ -165,7 +165,7 @@ body{
 }
 
 #prices h2{
-	padding-top: 100px;
+	padding-top: 25px;
 	color: white;
 }
 
@@ -396,6 +396,21 @@ article{
 #servicios .cajas p{
 	color:white;
 	padding: 35px 16px 35px 16px;
+}
+
+#servicios .cajas .mas{
+	transition: all 0.2s ease-in-out;
+	color:white;
+	cursor: pointer;
+	position: absolute;
+	bottom:0px;
+	right:32px;
+	font-weight: normal;
+	font-size: 50px
+}
+
+#servicios .cajas .mas:hover{
+	color:#3c3c3c;
 }
 
 

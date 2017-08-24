@@ -126,18 +126,34 @@
                 <div class="cajas">
                     <h2>SERVICIOS</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet a diam tempor fringilla. Mauris egestas felis lacinia viverra efficitur. Proin non metus scelerisque, maximus justo eu, elementum quam. Cras augue sem, dictum vel mattis</p>
-
+                    <span class="mas">+</span>
                 </div>
             </div><div class="col-md-4 padding">
                 <div class="cajas">
                     <h2>EVENTOS</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet a diam tempor fringilla. Mauris egestas felis lacinia viverra efficitur. Proin non metus scelerisque, maximus justo eu, elementum quam. Cras augue sem, dictum vel mattis</p>
+                    <span class="mas">+</span>
                 </div>
             </div><div class="col-md-4 padding">
                 <div class="cajas">
                     <h2>PRECIOS</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet a diam tempor fringilla. Mauris egestas felis lacinia viverra efficitur. Proin non metus scelerisque, maximus justo eu, elementum quam. Cras augue sem, dictum vel mattis</p>
+                    <span class="mas" id="botonPrecios" onclick="enlace('precios')">+</span>
                 </div>
+
+            <script>
+                var enlace = function(data){
+                    console.log(window.location.hostname)
+                    console.log(window.location.href)
+                    console.log(window.location.hash)
+                    console.log(window.location.pathname)
+                    console.log(window.location)
+                    window.open('http://localhost:63342/filomax_pro/precios.html','_blank')
+//                    window.location.href = "http://localhost:63342/filomax_pro/precios.html";
+
+                }
+            </script>
+
             </div>
         </div>
     </section>
