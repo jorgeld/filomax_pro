@@ -59,11 +59,14 @@ body{
 }
 
 .seccionLogo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 50px;
+	/*left: 0px;*/
 	width: 100%;
-	height: 78%;
+	height: 70%;
 }
 
 .seccionDatos{
