@@ -75,16 +75,18 @@ body{
 	left: 0px;
 	width: 100%;
 	height: 25%;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.3);
 	border-style: solid;
 	border-left: none;
 	border-right: none;
-	border-color: rgba(256,256,256,0.5);
+	border-color: rgba(16,16,16,0.2) !important;
 	border-width: 1px;
 }
 
 #logotipoFilomax{
 	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	/*margin-left:16px;*/
 	max-width: 100%;
 	max-height: 100%;
@@ -100,6 +102,8 @@ body{
 	border-style: solid;
 	border-left: none;
 	border-right: none;
+	border-bottom: none;
+	border-top: none;
 	border-color: rgba(256,256,256,0.5);
 	border-width: 1px;
 }
@@ -111,14 +115,16 @@ body{
 .firstContenedores h5{
 	text-align: center;
 	color:rgb(119,119,119);
-	padding-bottom: 16px
+	padding-bottom: 16px;
+	text-shadow: 2px 1px 2px black;
 }
 
 .firstContenedores p{
 	text-align: center;
 	color:white;
 	font-size: 14px;
-	margin: 0px
+	margin: 0px;
+	text-shadow: 2px 1px 2px black;
 }
 
 #firstDir{
@@ -132,11 +138,11 @@ body{
 }
 
 #firstTlf{
-	border-style: solid;
-	border-top: none;
-	border-bottom: none;
-	border-color: rgba(256,256,256,0.5);
-	border-width: 1px;
+	/*border-style: solid;*/
+	/*border-top: none;*/
+	/*border-bottom: none;*/
+	/*border-color: rgba(256,256,256,0.5);*/
+	/*border-width: 1px;*/
 }
 
 
@@ -416,6 +422,49 @@ article{
 	color:#3c3c3c;
 }
 
+#servicios .cajas a{
+	transition: all 0.2s ease-in-out;
+	color:white;
+	cursor: pointer;
+	position: absolute;
+	bottom:0px;
+	right:32px;
+	font-weight: normal;
+	font-size: 50px;
+	text-decoration: none;
+}
+
+#servicios .cajas a:hover{
+	 color:#3c3c3c;
+	 text-decoration: none;
+ }
+#servicios .cajas a:focus{
+	 color:#3c3c3c;
+	 text-decoration: none;
+ }
+#servicios .cajas a:focus{
+	 color:#3c3c3c;
+	 text-decoration: none;
+ }
+#servicios .cajas a:hover{
+	 color:#3c3c3c;
+	 text-decoration: none;
+ }
+#servicios .cajas a:focus{
+	 color:#3c3c3c;
+	 text-decoration: none;
+ }
+#servicios .cajas a:active{
+	 color:#3c3c3c;
+	 text-decoration: none;
+ }
+
+
+
+
+
+
+
 
 div.contenedores{padding:100px;box-shadow: 2px 3px 5px #888888;}
 
@@ -476,7 +525,7 @@ article .eventoClip{
 	padding: 0px 16px 32px 16px;
 }
 
-.eventoClip .contenedorClipEvento footer{
+.eventoClip .contenedorClipEvento footer a{
 	position: absolute;
 	bottom: 16px;
 	right: 16px;
@@ -489,8 +538,16 @@ article .eventoClip{
 	padding: 0px 16px 16px 0px;
 }
 
-.eventoClip div footer:hover{
+.eventoClip div footer a:hover{
 	color: white;
+	text-decoration: none;
+}
+
+.eventoClip div footer a:active{
+	text-decoration: none;
+}
+.eventoClip div footer a:focus{
+	text-decoration: none;
 }
 
 .sombreadoClipEvento{
