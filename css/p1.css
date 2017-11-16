@@ -161,6 +161,7 @@ body{
 	height: 100px;
 	background-image: url(images/degradado.png);
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 #prices{
@@ -168,6 +169,9 @@ body{
 	width: 100%;
 	height: auto;
 	background-color: #101010;
+	/*!*background-image: url(images/salon.jpg);*!*/
+	/*background-image: url("images/fiesta2.jpg");*/
+	/*background-size: cover;*/
 	padding-left: 10%;
 	padding-right: 10%;
 	padding-bottom: 100px;
@@ -436,6 +440,11 @@ article{
 	text-decoration: none;
 }
 
+.col-md-3{
+	padding-left: 3px !important;
+	padding-right: 3px !important;
+}
+
 #servicios .cajas a:hover{
 	 color:#3c3c3c;
 	 text-decoration: none;
@@ -498,10 +507,10 @@ article .eventoClip{
 
 .eventoClip .contenedorClipEvento{
 	position: relative;
-	border: solid white 1px;
-	margin-bottom: 16px !important;
+	/*border: solid white 1px;*/
+	margin-bottom: 6px !important;
 	width: 100%;
-	height: 50%;
+	height: 30%;
 	/*background-image: url("images/fiesta2.jpg");*/
 	background-size: cover;
 	transition: all 0.2s ease-out;
