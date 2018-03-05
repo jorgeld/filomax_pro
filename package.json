@@ -1,0 +1,22 @@
+{
+  "name": "filomax_pro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgeld/filomax_pro.git"
+  },
+  "author": "jld86",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jorgeld/filomax_pro/issues"
+  },
+  "homepage": "https://github.com/jorgeld/filomax_pro#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
