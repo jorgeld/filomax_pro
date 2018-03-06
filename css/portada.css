@@ -311,15 +311,6 @@ section.contenedor section.artistas section.contendorArtistas > article > header
 }
 
 
-
-/*section.contenedor section.artistas > article > h3{*/
-    /*text-transform: uppercase;*/
-    /*color: white;*/
-    /*text-shadow: 2px 1px 2px black;*/
-    /*padding: 16px;*/
-/*}*/
-
-
 /************   mapa   **********************************/
 section.contenedor section.mapa{
     background-color: #101010;
@@ -327,7 +318,11 @@ section.contenedor section.mapa{
 }
 
 /************   footer   **********************************/
-
+footer{
+    padding: 80px 0 80px 0;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+}
 
 
 
