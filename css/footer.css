@@ -1,14 +1,14 @@
-#footer{
+footer{
 	background-color: white;
 	padding-top: 80px;
 	padding-bottom:80px
 }
 
-#footer img {
+footer img {
 	max-width: 40px;
 }
 
-#footer h4 {
+footer h4 {
 	text-align: center;
 	margin: 0px 16px;
     padding-top:10px; 
@@ -16,7 +16,7 @@
     color:rgb(8,8,8);
 }
 
-#footer p.small{
+footer p.small{
 	text-align: center;
 	color:#acb3b6;
 	max-width: 250px;
@@ -46,28 +46,28 @@
     text-decoration: none;
 }
 
-#footer #iconos{
+footer #iconos{
     text-align: center;
 }
 
-#footer #iconos i{
+footer #iconos i{
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     padding-left: 3px;
     padding-right: 3px;
 }
 
-#footer #iconos i{
+footer #iconos i{
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     padding-left: 3px;
     padding-right: 3px;
 }
 
-#footer a{
+footer a{
     color: #333 !important;
 }
 
-#footer #iconos i:hover{
+footer #iconos i:hover{
     color:#acb3b6;
 }

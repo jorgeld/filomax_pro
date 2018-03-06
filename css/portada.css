@@ -25,7 +25,7 @@
 section.contenedor{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100vh auto 100vh auto 100vh 100vh;
+    grid-template-rows: 100vh auto 100vh auto 100vh auto;
 }
 
 /*********************    PORTADA     ******************/
@@ -326,34 +326,11 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*PANTALLAS GRANDES*/
 @media (min-width: 1025px){
     section.contenedor{
         grid-template-columns: 1fr;
-        grid-template-rows: 100vh auto 100vh auto 100vh 100vh;
+        grid-template-rows: 100vh auto 100vh auto 100vh auto;
     }
 
     /*********************    PORTADA     ******************/
