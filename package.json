@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/jorgeld/filomax_pro#readme",
   "devDependencies": {
+    "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
-    "browser-sync": "^2.23.6"
+    "gulp-clean-css": "^3.9.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-minify": "^2.1.0"
   }
 }

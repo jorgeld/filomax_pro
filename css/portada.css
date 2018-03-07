@@ -30,7 +30,7 @@ section.contenedor{
 
 /*********************    PORTADA     ******************/
 section.contenedor section.portada{
-    background-image: url("images/fachada.jpg");
+    background-image: url("/images/fachada.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -163,7 +163,7 @@ section.contenedor footer{
 /************   eventos   **********************************/
 
 section.contenedor section.eventos{
-    background-image: url("images/fiesta2.jpg");
+    background-image: url("/images/fiesta2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -311,7 +311,7 @@ section.contenedor section.artistas section.contendorArtistas > article > header
 }
 /************   barberos  ******************************/
 section.contenedor section.barberos{
-    background-image: url("images/fondo_barberos.jpg");
+    background-image: url("/images/fondo_barberos.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -340,7 +340,7 @@ section.contenedor section.barberos section.contenedorBarberos{
 section.contenedor section.barberos section.contenedorBarberos > article {
     width: 300px;
     height: 500px;
-    background-image: url("images/barber2.jpg");
+    background-image: url("/images/barber2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

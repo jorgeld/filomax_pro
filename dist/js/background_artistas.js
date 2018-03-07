@@ -1,0 +1,12 @@
+document.getElementById('norman').style.backgroundImage = "url(css/images/events/nora-min.jpg)";
+document.getElementById('cannibals').style.backgroundImage = "url(css/images/events/cannibals-min.jpg)";
+document.getElementById('ganges').style.backgroundImage = "url(css/images/events/ganges-min.jpg)";
+document.getElementById('sofar').style.backgroundImage = "url(css/images/events/sofar-min.jpg)";
+document.getElementById('vzamora').style.backgroundImage = "url(css/images/events/vanesaZamora-min.jpg)";
+document.getElementById('cstreet').style.backgroundImage = "url(css/images/events/crypticStreet-min.jpg)";
+document.getElementById('ruzzi').style.backgroundImage = "url(css/images/events/ruzzi-min.jpg)";
+document.getElementById('harry').style.backgroundImage = "url(css/images/events/harry-min.jpg)";
+document.getElementById('xero').style.backgroundImage = "url(css/images/events/xero-min.jpg)";
+document.getElementById('adam').style.backgroundImage = "url(css/images/events/adam-min.jpg)";
+document.getElementById('arielle').style.backgroundImage = "url(css/images/events/arielle-min.jpg)";
+document.getElementById('hola').style.backgroundImage = "url(css/images/events/hola-min.jpg)";

@@ -1,6 +1,34 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var reload      = browserSync.reload;
+var cleanCSS = require('gulp-clean-css');
+var minifyJS = require('gulp-minify');
+var minifyIMG = require('gulp-imagemin');
+
+//Minificado de ficheros css
+gulp.task('minify-css',function(){
+    return gulp.src('css/*.css')
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(gulp.dest('dist/css'));
+});
+
+gulp.task('compressJS', function() {
+    gulp.src('js/*.js')
+        .pipe(minifyJS({
+            ext:{
+                src:'.js'
+            },
+            exclude: ['tasks'],
+            ignoreFiles: ['.combo.js', '-min.js']
+        }))
+        .pipe(gulp.dest('dist/js'))
+});
+
+gulp.task('compressIMG',function(){
+    gulp.src('css/**/*.jpg','css/**/*.png')
+        .pipe(minifyIMG())
+        .pipe(gulp.dest('dist/images'))
+});
 
 // Watch scss AND html files, doing different things with each.
 gulp.task('serve', function () {
