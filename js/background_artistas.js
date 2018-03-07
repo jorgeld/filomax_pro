@@ -1,4 +1,4 @@
-document.getElementById('norman').style.backgroundImage = "url(images/events/nora-min.jpg)";
+document.getElementById('norman').style.backgroundImage = "url(./images/events/nora-min.jpg)";
 document.getElementById('cannibals').style.backgroundImage = "url(images/events/cannibals-min.jpg)";
 document.getElementById('ganges').style.backgroundImage = "url(images/events/ganges-min.jpg)";
 document.getElementById('sofar').style.backgroundImage = "url(images/events/sofar-min.jpg)";
