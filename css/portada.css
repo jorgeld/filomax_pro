@@ -211,7 +211,7 @@ section.contenedor section.artistas section.contendorArtistas{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items:center;
+    align-content:center;
 }
 
 section.contenedor section.artistas section.contendorArtistas > article{
@@ -510,9 +510,10 @@ footer{
 
 /*PANTALLAS GRANDES*/
 @media (min-width: 1025px){
+
     section.contenedor{
         grid-template-columns: 1fr;
-        grid-template-rows: 100vh auto 100vh auto 100vh auto auto 100vh auto;
+        grid-template-rows: 100vh auto 100vh auto 100vh 100vh 100vh 100vh auto;
     }
 
     /*********************    PORTADA     ******************/
