@@ -412,7 +412,7 @@ footer{
 @media (min-width: 1025px){
     section.contenedor{
         grid-template-columns: 1fr;
-        grid-template-rows: 100vh auto 100vh auto auto 100vh auto;
+        grid-template-rows: 100vh auto 100vh auto 100vh 100vh auto;
     }
 
     /*********************    PORTADA     ******************/
