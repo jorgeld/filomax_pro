@@ -13,6 +13,7 @@ gulp.task('compressCSS',function(){
         .pipe(gulp.dest('dist/css'));
 });
 
+//Minificado de ficheros JS
 gulp.task('compressJS', function() {
     gulp.src('js/*.js')
         .pipe(minifyJS({
@@ -25,6 +26,7 @@ gulp.task('compressJS', function() {
         .pipe(gulp.dest('dist/js'))
 });
 
+//Minificado de imagenes
 gulp.task('compressIMG',function(){
     gulp.src('images/**/*.jpg')
         .pipe(minifyIMG())
@@ -34,6 +36,7 @@ gulp.task('compressIMG',function(){
         .pipe(gulp.dest('dist/images'))
 });
 
+//Minificado de ficheros js,css,imagenes
 gulp.task('minificar',function(){
     runSequence('compressCSS','compressJS','compressIMG');
 });
@@ -51,4 +54,6 @@ gulp.task('serve', function () {
     gulp.watch("*.html").on("change", reload);
     gulp.watch("**/*.css").on("change", reload);
     gulp.watch("*.js").on("change", reload);
+
+    runSequence('minificar');
 });
