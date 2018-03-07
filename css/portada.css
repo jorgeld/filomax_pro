@@ -1,7 +1,7 @@
 section.contenedor{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100vh auto 100vh auto auto 100vh 100vh auto 100vh auto;
+    grid-template-rows: 100vh auto 100vh auto auto auto auto 100vh auto;
 }
 
 /*********************    PORTADA     ******************/
@@ -309,13 +309,12 @@ section.contenedor section.barberos section.contenedorBarberos{
     flex-wrap: wrap;
     justify-content: center;
     align-items:center;
-
-    padding-bottom: 64px;
+    padding-bottom: 32px;
 }
 
 section.contenedor section.barberos section.contenedorBarberos > article {
-    width: 300px;
-    height: 500px;
+    width: 250px;
+    height: 400px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -431,19 +430,29 @@ section.contenedor section.listadoServicios{
     justify-content: center;
     align-items: center;
     background: linear-gradient(#000000, #101010,#101010,#101010, #000000);
-    padding:64px;
+    padding:32px;
 }
 
 section.contenedor section.listadoServicios > article{
-    width: 500px;
-    height: 150px;
+    width: auto;
+    height: auto;
     background-color: #101010;
     margin: 4px;
     border: solid 1px #403f3f;
     position: relative;
     display: grid;
-    grid-template-columns: 148px 1fr;
+    /*grid-template-columns: 148px 1fr;*/
+    grid-template-columns: 1fr;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+section.contenedor section.listadoServicios > article:hover{
+    background-color: #6b6a6a;
+}
+
+section.contenedor section.listadoServicios > article:hover > section > p{
+    color: white;
 }
 
 section.contenedor section.listadoServicios > article > span {
@@ -473,12 +482,15 @@ section.contenedor section.listadoServicios > article > section > h3{
     text-shadow: 2px 1px 2px black;
     color: white;
     padding: 8px 8px 0 8px;
+    text-align: center;
 }
 
 section.contenedor section.listadoServicios > article > section > p {
     color: #6b6a6a;
     text-shadow: 2px 1px 2px black;
     padding: 8px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
 }
 
 
@@ -500,7 +512,7 @@ footer{
 @media (min-width: 1025px){
     section.contenedor{
         grid-template-columns: 1fr;
-        grid-template-rows: 100vh auto 100vh auto 100vh 100vh auto 100vh auto;
+        grid-template-rows: 100vh auto 100vh auto 100vh auto auto 100vh auto;
     }
 
     /*********************    PORTADA     ******************/
@@ -583,6 +595,26 @@ footer{
 
     section.contenedor section.servicios > article > span{
         width: 50%;
+    }
+
+    /************   barberos   **********************************/
+    section.contenedor section.barberos section.contenedorBarberos > article {
+        width: 300px;
+        height: 500px;
+    }
+
+    section.contenedor section.barberos section.contenedorBarberos{
+        padding-bottom: 64px;
+    }
+
+    /************ servicios ***************************************/
+    section.contenedor section.listadoServicios{
+        padding:64px;
+    }
+
+    section.contenedor section.listadoServicios > article{
+        width: 500px;
+        height: 150px;
     }
 
 }
