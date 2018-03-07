@@ -1,31 +1,7 @@
-/*section.contenedorPortada .portada portadaLogo{*/
-    /*grid-row: 1 / 2;*/
-    /*grid-column: 1 / 2;*/
-
-    /*justify-self: center;*/
-    /*align-self: center;*/
-/*}*/
-
-/*section.contenedorPortada portadaFondo{*/
-    /*grid-row: 1 / 2;*/
-    /*grid-column: 1 / 2;*/
-
-    /*background-color: rgba(0, 0, 0, 0.60);*/
-
-/*}*/
-
-/*section.contenedorPortada .portada portadaLogo img{*/
-    /*width: 600px;*/
-    /*height: 600px;*/
-
-    /*opacity: 0;*/
-    /*transition: all 0.5s ease-in;*/
-/*}*/
-
 section.contenedor{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100vh auto 100vh auto auto 100vh 100vh auto;
+    grid-template-rows: 100vh auto 100vh auto auto 100vh 100vh auto 100vh auto;
 }
 
 /*********************    PORTADA     ******************/
@@ -77,8 +53,6 @@ section.contenedor section.portada article.info section article.masInfo{
     text-transform: uppercase;
     text-align: center;
 }
-
-/*********************  FIN  PORTADA     ******************/
 
 
 /******************** DESC ***********************************/
@@ -159,9 +133,7 @@ section.contenedor footer{
     background: white;
 }
 
-
 /************   eventos   **********************************/
-
 section.contenedor section.eventos{
     background-image: url("/images/fiesta2.jpg");
     background-size: cover;
@@ -202,7 +174,6 @@ section.contenedor section.eventos > article > span{
     justify-self: center;
     align-self: center;
     border: solid 1px white;
-    color: white;
     text-transform: uppercase;
     text-align: center;
     padding: 16px;
@@ -213,12 +184,16 @@ section.contenedor section.eventos > article > span{
     transition: all 0.4s ease-out;
 }
 
+section.contenedor section.eventos > article > span > a {
+    color: white;
+    text-decoration: none;
+}
+
 section.contenedor section.eventos > article > span:hover{
     background-color: rgba(16, 16, 16, 0.90);
 }
 
 /************   artistas   **********************************/
-
 section.contenedor section.artistas{
     display: grid;
     grid-template-rows: auto 1fr;
@@ -309,6 +284,7 @@ section.contenedor section.artistas section.contendorArtistas > article > header
     text-shadow: 2px 1px 2px black;
     padding: 0 16px 16px 16px;
 }
+
 /************   barberos  ******************************/
 section.contenedor section.barberos{
     background-image: url("/images/fondo_barberos.jpg");
@@ -340,7 +316,6 @@ section.contenedor section.barberos section.contenedorBarberos{
 section.contenedor section.barberos section.contenedorBarberos > article {
     width: 300px;
     height: 500px;
-    background-image: url("/images/barber2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -387,12 +362,127 @@ section.contenedor section.barberos section.contenedorBarberos > article > secti
     color: #777;
 }
 
+/************   servicios   **********************************/
+section.contenedor section.servicios{
+    background-image: url("/images/bombilla.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+section.contenedor section.servicios > article {
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 16px;
+    padding: 20%;
+}
+
+section.contenedor section.servicios > article > h1{
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 1px 2px black;
+    font-size: 50px;
+    text-align: center
+}
+
+section.contenedor section.servicios > article > p{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 1px 2px black;
+    font-size: 14px
+}
+
+section.contenedor section.servicios > article > span{
+    justify-self: center;
+    align-self: center;
+    border: solid 1px white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.50);
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+section.contenedor section.servicios > article > span > a {
+    color: white;
+    text-decoration: none;
+}
+
+section.contenedor section.servicios > article > span:hover{
+    background-color: rgba(16, 16, 16, 0.90);
+}
+
+/************   listado de servicios   **********************************/
+section.contenedor section.listadoServicios{
+    /*display: grid;*/
+    /*grid-template-rows: auto 1fr;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#000000, #101010,#101010,#101010, #000000);
+    padding:64px;
+}
+
+section.contenedor section.listadoServicios > article{
+    width: 500px;
+    height: 150px;
+    background-color: #101010;
+    margin: 4px;
+    border: solid 1px #403f3f;
+    position: relative;
+    display: grid;
+    grid-template-columns: 148px 1fr;
+    cursor: pointer;
+}
+
+section.contenedor section.listadoServicios > article > span {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-right: solid 1px #403f3f;
+}
+
+section.contenedor section.listadoServicios > article > span > span.sombra {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.91);
+}
+
+section.contenedor section.listadoServicios > article > section{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+section.contenedor section.listadoServicios > article > section > h3{
+    text-transform: uppercase;
+    text-shadow: 2px 1px 2px black;
+    color: white;
+    padding: 8px 8px 0 8px;
+}
+
+section.contenedor section.listadoServicios > article > section > p {
+    color: #6b6a6a;
+    text-shadow: 2px 1px 2px black;
+    padding: 8px;
+}
 
 
-
-
-
-/************   mapa   **********************************/
+    /************   mapa   **********************************/
 section.contenedor section.mapa{
     background-color: #101010;
     position: relative;
@@ -406,13 +496,11 @@ footer{
 }
 
 
-
-
 /*PANTALLAS GRANDES*/
 @media (min-width: 1025px){
     section.contenedor{
         grid-template-columns: 1fr;
-        grid-template-rows: 100vh auto 100vh auto 100vh 100vh auto;
+        grid-template-rows: 100vh auto 100vh auto 100vh 100vh auto 100vh auto;
     }
 
     /*********************    PORTADA     ******************/
@@ -483,6 +571,19 @@ footer{
         width: 50%;
     }
 
+    /************   SERVICIOS   **********************************/
+
+    section.contenedor section.servicios > article > h1{
+        font-size: 100px;
+    }
+
+    section.contenedor section.servicios > article > p{
+        font-size: 18px
+    }
+
+    section.contenedor section.servicios > article > span{
+        width: 50%;
+    }
 
 }
 
