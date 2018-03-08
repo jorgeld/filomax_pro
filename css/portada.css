@@ -382,7 +382,7 @@ section.contenedor section.servicios > article {
     display: grid;
     grid-template-rows: auto auto auto;
     grid-gap: 16px;
-    padding: 20%;
+    padding: 5%;
 }
 
 section.contenedor section.servicios > article > h1{
@@ -601,6 +601,10 @@ footer{
 
     section.contenedor section.servicios > article > span{
         width: 50%;
+    }
+
+    section.contenedor section.servicios > article {
+        padding: 20%;
     }
 
     /************   barberos   **********************************/
