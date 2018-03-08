@@ -340,11 +340,11 @@ section.contenedor section.barberos section.contenedorBarberos > article > span.
 }
 
 section.contenedor section.barberos section.contenedorBarberos > article:hover{
-    background-size: 170%;
+    background-size: 200%;
 }
 
 section.contenedor section.barberos section.contenedorBarberos > article:hover > span.sombra{
-    background-color: rgba(0, 0, 0, 0.81);
+    background-color: rgba(0, 0, 0, 0.40);
 }
 
 section.contenedor section.barberos section.contenedorBarberos > article > section {
@@ -436,8 +436,8 @@ section.contenedor section.listadoServicios{
 }
 
 section.contenedor section.listadoServicios > article{
-    width: 70%;
-    height: auto;
+    width: 350px;
+    height: 125px;
     background-color: #101010;
     margin: 4px;
     border: solid 1px #403f3f;
@@ -455,6 +455,7 @@ section.contenedor section.listadoServicios > article:hover{
 
 section.contenedor section.listadoServicios > article:hover > section > p{
     color: white;
+    font-size: 10px;
 }
 
 section.contenedor section.listadoServicios > article > span {
@@ -485,6 +486,7 @@ section.contenedor section.listadoServicios > article > section > h3{
     color: white;
     padding: 8px 8px 0 8px;
     text-align: center;
+    font-size: 16px;
 }
 
 section.contenedor section.listadoServicios > article > section > p {
@@ -574,7 +576,6 @@ footer{
         grid-column: 2 / 4;
     }
 
-
     /************   eventos   **********************************/
 
     section.contenedor section.eventos > article > h1{
@@ -622,9 +623,17 @@ footer{
         padding:64px;
     }
 
-    section.contenedor section.listadoServicios > article{
-        width: 500px;
-        height: 150px;
+    /*section.contenedor section.listadoServicios > article{*/
+        /*width: 350px;*/
+        /*height: 125px;*/
+    /*}*/
+
+    section.contenedor section.listadoServicios > article > section > h3 {
+        /*font-size: 16px;*/
+    }
+
+    section.contenedor section.listadoServicios > article > section > p {
+        /*font-size: 10px;*/
     }
 
 }
