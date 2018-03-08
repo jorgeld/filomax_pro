@@ -71,7 +71,9 @@
 
     <section class="contenedor">
 
-        <section class="portada" id="home">
+        <section class="portada" id="home" style="position: relative">
+            <canvas id="canvas" class="hidden-xs"></canvas>
+            </span>
              <img src="images/white2.png" class="logo">
              <article class="info">
                   <section>
@@ -419,23 +421,8 @@
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
     <script src="./js/scroll.js"></script>
-    <script>
+    <script src="./js/canvasjs.js"></script>
 
-        window.onload = function() {
-
-            var desplegado = false;
-
-            var logo = document.getElementsByClassName("logo");
-            if(!desplegado){
-                logo[0].style.opacity = '1'
-            }else{
-                desplegado = true;
-                logo[0].style.opacity = '2'
-            }
-        };
-
-
-    </script>
 
 </main>
 </body>

@@ -26,6 +26,16 @@ $(document).ready( function(){
     //     }
     // });
 
+    var desplegado = false;
+
+    var logo = document.getElementsByClassName("logo");
+    if(!desplegado){
+        logo[0].style.opacity = '1'
+    }else{
+        desplegado = true;
+        logo[0].style.opacity = '2'
+    }
+
     $('a').click(function(){
         $('html, body').animate({
             scrollTop: $( $(this).attr('href') ).offset().top

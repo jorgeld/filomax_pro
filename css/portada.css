@@ -6,6 +6,7 @@ section.contenedor{
 
 /*********************    PORTADA     ******************/
 section.contenedor section.portada{
+    position: relative;
     background-image: url("/images/fachada.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,12 +18,18 @@ section.contenedor section.portada{
     grid-template-columns: 1fr;
 }
 
+section.contenedor section.portada > canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 section.contenedor section.portada img{
     justify-self: center;
     align-self: center;
     width: 300px;
     opacity: 0;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 section.contenedor section.portada article.info{
