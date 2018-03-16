@@ -10,3 +10,6 @@ document.getElementById('xero').style.backgroundImage = "url(./images/events/xer
 document.getElementById('adam').style.backgroundImage = "url(./images/events/adam-min.jpg)";
 document.getElementById('arielle').style.backgroundImage = "url(./images/events/arielle-min.jpg)";
 document.getElementById('hola').style.backgroundImage = "url(./images/events/hola-min.jpg)";
+document.getElementById('dan').style.backgroundImage = "url(./images/events/dan-min.jpg)";
+document.getElementById('cuberries').style.backgroundImage = "url(./images/events/playa-min.jpg)";
+document.getElementById('faria').style.backgroundImage = "url(./images/events/faria-min.jpg)";
