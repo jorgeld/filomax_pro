@@ -24,13 +24,39 @@ section.contenedor section.portada > canvas{
     left: 0;
 }
 
+section.contenedor section.portada > span{
+    border: solid 1px white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.50);
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+    margin-top : 16px
+}
+
+section.contenedor section.portada > span > a {
+    color: white;
+    text-decoration: none;
+}
+
+section.contenedor section.portada > span:hover{
+    background-color: rgba(16, 16, 16, 0.90);
+}
+
+
 section.contenedor section.portada img{
+
     justify-self: center;
     align-self: center;
     width: 300px;
     opacity: 0;
     transition: all 0.2s ease-in-out;
 }
+
+
 
 section.contenedor section.portada article.info{
     display: grid;
@@ -47,6 +73,42 @@ section.contenedor section.portada article.info section{
     color: white;
     text-shadow: 2px 1px 2px black;
     padding: 8px;
+}
+
+section.contenedor section.portada article.info section.sectionBotonReserva{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    text-shadow: 2px 1px 2px black;
+    padding: 8px;
+}
+
+
+
+section.contenedor section.portada article.info section > span{
+
+    justify-self: center;
+
+    border: solid 1px white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.50);
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+section.contenedor section.portada article.info section span:hover{
+    background-color: rgba(16, 16, 16, 0.90);
+}
+
+section.contenedor section.portada article.info section span > a {
+    color: white;
+    text-decoration: none;
 }
 
 section.contenedor section.portada article.info section h4{
