@@ -1,7 +1,7 @@
 section.contenedor{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100vh auto 100vh auto auto auto auto auto;
+    grid-template-rows: 100vh auto 100vh auto auto auto 100vh auto;
 }
 
 /*********************    PORTADA     ******************/
@@ -46,7 +46,6 @@ section.contenedor section.portada > span:hover{
     background-color: rgba(16, 16, 16, 0.90);
 }
 
-
 section.contenedor section.portada img{
 
     justify-self: center;
@@ -55,8 +54,6 @@ section.contenedor section.portada img{
     opacity: 0;
     transition: all 0.2s ease-in-out;
 }
-
-
 
 section.contenedor section.portada article.info{
     display: grid;
@@ -84,8 +81,6 @@ section.contenedor section.portada article.info section.sectionBotonReserva{
     text-shadow: 2px 1px 2px black;
     padding: 8px;
 }
-
-
 
 section.contenedor section.portada article.info section > span{
 
@@ -356,82 +351,6 @@ section.contenedor section.artistas section.contendorArtistas > article > header
     padding: 0 16px 16px 16px;
 }
 
-/************   barberos  ******************************/
-section.contenedor section.barberos{
-    background-image: url("/images/fondo_barberos.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-
-    display: grid;
-    grid-template-rows: auto 1fr;
-}
-
-section.contenedor section.barberos > h2{
-    color: white;
-    text-shadow: 2px 1px 2px black;
-    padding:64px 0 64px 0;
-}
-
-section.contenedor section.barberos section.contenedorBarberos{
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items:center;
-    padding-bottom: 32px;
-}
-
-section.contenedor section.barberos section.contenedorBarberos > article {
-    width: 250px;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 4px;
-    border: solid 1px #403f3f;
-    position: relative;
-    display: grid;
-    grid-template-rows: 1fr auto;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-
-section.contenedor section.barberos section.contenedorBarberos > article > span.sombra {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.99),rgba(0, 0, 0, 0.81), rgba(0, 0, 0, 0.6),transparent,transparent,transparent, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.81),rgba(0, 0, 0, 0.99));
-    transition: 0.3s ease-in-out;
-}
-
-section.contenedor section.barberos section.contenedorBarberos > article:hover{
-    background-size: 200%;
-}
-
-section.contenedor section.barberos section.contenedorBarberos > article:hover > span.sombra{
-    background-color: rgba(0, 0, 0, 0.40);
-}
-
-section.contenedor section.barberos section.contenedorBarberos > article > section {
-    display: grid;
-    justify-content: center;
-    align-content: flex-end;
-    text-align: center;
-    z-index: 1;
-    padding-bottom: 30%;
-    text-transform: uppercase;
-    color: white;
-    text-shadow: 2px 1px 2px black;
-}
-
-section.contenedor section.barberos section.contenedorBarberos > article > section > p {
-    color: #777;
-}
-
 /************   servicios   **********************************/
 section.contenedor section.servicios{
     background-image: url("/images/bombilla.jpg");
@@ -494,8 +413,6 @@ section.contenedor section.servicios > article > span:hover{
 
 /************   listado de servicios   **********************************/
 section.contenedor section.listadoServicios{
-    /*display: grid;*/
-    /*grid-template-rows: auto 1fr;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -504,68 +421,50 @@ section.contenedor section.listadoServicios{
     padding:32px;
 }
 
-section.contenedor section.listadoServicios > article{
-    width: 350px;
-    height: 125px;
-    background-color: #101010;
-    margin: 4px;
-    border: solid 1px #403f3f;
-    position: relative;
-    display: grid;
-    /*grid-template-columns: 148px 1fr;*/
-    grid-template-columns: 1fr;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-
-section.contenedor section.listadoServicios > article:hover{
-    background-color: #6b6a6a;
-}
-
-section.contenedor section.listadoServicios > article:hover > section > p{
-    color: white;
-    font-size: 10px;
-}
-
-section.contenedor section.listadoServicios > article > span {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-right: solid 1px #403f3f;
-}
-
-section.contenedor section.listadoServicios > article > span > span.sombra {
-    position: absolute;
+section.contenedor section.listadoServicios section{
+    border: 1px solid #403f3f54;
+    background-color: #15151538;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.91);
+    padding: 16px;
+    margin-bottom: 16px;
 }
 
-section.contenedor section.listadoServicios > article > section{
+section.contenedor section.listadoServicios section span{
     display: grid;
-    grid-template-rows: auto auto;
+    grid-gap: 12px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
 }
 
-section.contenedor section.listadoServicios > article > section > h3{
-    text-transform: uppercase;
-    text-shadow: 2px 1px 2px black;
+section.contenedor section.listadoServicios section h3{
     color: white;
-    padding: 8px 8px 0 8px;
-    text-align: center;
-    font-size: 16px;
+    padding-bottom: 16px;
+    text-transform: uppercase;
 }
 
-section.contenedor section.listadoServicios > article > section > p {
-    color: #6b6a6a;
-    text-shadow: 2px 1px 2px black;
-    padding: 8px;
-    text-align: center;
-    transition: 0.3s ease-in-out;
+section.contenedor section.listadoServicios section article{
+    background-color: #1f1f1fa6;
+    border-radius: 5px;
+    padding: 12px;
+    border-bottom: 1px solid #2c2c2c;
+    border-right: 1px solid #2c2c2c;
 }
 
+section.contenedor section.listadoServicios section article h5{
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #dbdbdb;
+    font-weight: lighter;
+
+}
+
+section.contenedor section.listadoServicios section article p{
+    margin: 0px;
+    color: #999999;
+}
 
     /************   mapa   **********************************/
 section.contenedor section.mapa{
@@ -690,6 +589,13 @@ footer{
     /************ servicios ***************************************/
     section.contenedor section.listadoServicios{
         padding:64px;
+    }
+
+    section.contenedor section.listadoServicios section span{
+        display: grid;
+        grid-gap: 12px;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     /*section.contenedor section.listadoServicios > article{*/
