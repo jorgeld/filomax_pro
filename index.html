@@ -13,11 +13,11 @@
     <meta property="og:description" content="Barbería Filomax. La barbería con más encanto de Chamberí" style="">
     <base href="./">
     <link rel="shortcut icon" href="./images/mifavicon.ico">
-    <link rel="stylesheet" href="./css/p1.css">
+    <link rel="stylesheet" href="./css/p2.css">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/portada_V3.css">
+    <link rel="stylesheet" href="./css/portada_V4.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://use.fontawesome.com/4e1a93cd20.js"></script>
     <script>
@@ -72,50 +72,94 @@
 
     <section class="contenedor">
 
+        <!--PORTADA-->
         <section class="portada" id="home" style="position: relative">
+
+            <!--CANVAS-->
             <canvas id="canvas" class="hidden-xs"></canvas>
 
-            <!--
-            <span style="position: absolute;top: 0;left: 0;" class="hidden-lg hidden-md">
-                <a href="https://connect.shore.com/widget/barberia-filomax-shaving-company?locale=es"
-                   target="_blank">RESERVA ONLINE</a>
-            </span>
-            -->
-
-
-             <img src="images/white2.png" class="logo">
+             <!--<img src="images/white2.png" class="logo">-->
              <article class="info">
-                 <section  class="hidden-lg hidden-md sectionBotonReserva">
-                     <span class="botonReserva">
-                        <a href="https://connect.shore.com/widget/barberia-filomax-shaving-company?locale=es"
-                           target="_blank">RESERVA ONLINE</a>
-                    </span>
-                 </section>
-                  <section>
-                      <h4>Dirección:</h4>
-                      <article class="masInfo">
-                          C/ Blasco de Garay 25, Madrid 28015<br>
-                          Metro Arguelles / Islas Filipinas
-                      </article>
-                  </section>
-                  <section>
-                      <h4>teléfono:</h4>
-                      <article class="masInfo">
-                          <span class="tlf">914 21 66 17</span>
-                      </article>
-                  </section>
-                  <section>
-                      <h4>horario:</h4>
-                      <article class="masInfo">
-                          Lunes: 16:00 - 21:00<br>
-                          Martes a Viernes: 11:00 - 14:00 y de 16:00 - 21:00<br>
-                          Sabados: 10:00 - 14:00 y de 16:00 - 20:00
 
-                      </article>
-                  </section>
+
+                 <section id="logoPortada">
+                     <img src="images/white2.png" style="opacity: 100">
+                 </section>
+                 <section id="botonReserva" class="hidden-lg hidden-md">
+                     <article>
+                         <img src="images/logo2.png">
+                         <h3>RESERVA ONLINE</h3>
+                     </article>
+                 </section>
+                 <section id="locales">
+                     <article id="localChamberi">
+                         <h3>CHAMBERI</h3>
+                         <span><i class="fas fa-map-marker-alt"></i></span>
+                         <span><p>C/ BLASCO DE GARAY 25, MADRID 28015</p></span>
+                         <span><i class="fas fa-phone"></i></span>
+                         <span><p>914 21 66 17</p></span>
+                         <span><i class="far fa-calendar-alt"></i></span>
+                         <span class="horarios">
+                             <span><p>LUNES: 16:00 - 21:00</p></span>
+                             <span><p>MARTES A VIERNES: 11:00 - 14:00 Y DE 16:00 - 21:00</p></span>
+                             <span><p>SABADOS: 10:00 - 14:00 Y DE 16:00 - 20:00</p></span>
+                         </span>
+
+                     </article>
+                     <article id="localLavapies">
+                         <h3>LAVAPIÉS</h3>
+                         <span><i class="fas fa-map-marker-alt"></i></span>
+                         <span><p>C/ BLASCO DE GARAY 25, MADRID 28015</p></span>
+                         <span><i class="fas fa-phone"></i></span>
+                         <span><p>914 21 66 17</p></span>
+                         <span><i class="far fa-calendar-alt"></i></span>
+                         <span class="horarios">
+                             <span><p>LUNES: 16:00 - 21:00</p></span>
+                             <span><p>MARTES A VIERNES: 11:00 - 14:00 Y DE 16:00 - 21:00</p></span>
+                             <span><p>SABADOS: 10:00 - 14:00 Y DE 16:00 - 20:00</p></span>
+                         </span>
+                     </article>
+                 </section>
+
+
+
+
+
+
+
+
+                 <!--<section  class="hidden-lg hidden-md sectionBotonReserva">-->
+                     <!--<span class="botonReserva">-->
+                        <!--<a href="https://connect.shore.com/widget/barberia-filomax-shaving-company?locale=es"-->
+                           <!--target="_blank">RESERVA ONLINE</a>-->
+                    <!--</span>-->
+                 <!--</section>-->
+                 <!--<section>-->
+                      <!--<h4>Dirección:</h4>-->
+                      <!--<article class="masInfo">-->
+                          <!--C/ Blasco de Garay 25, Madrid 28015<br>-->
+                          <!--Metro Arguelles / Islas Filipinas-->
+                      <!--</article>-->
+                  <!--</section>-->
+                 <!--<section>-->
+                      <!--<h4>teléfono:</h4>-->
+                      <!--<article class="masInfo">-->
+                          <!--<span class="tlf">914 21 66 17</span>-->
+                      <!--</article>-->
+                  <!--</section>-->
+                 <!--<section>-->
+                      <!--<h4>horario:</h4>-->
+                      <!--<article class="masInfo">-->
+                          <!--Lunes: 16:00 - 21:00<br>-->
+                          <!--Martes a Viernes: 11:00 - 14:00 y de 16:00 - 21:00<br>-->
+                          <!--Sabados: 10:00 - 14:00 y de 16:00 - 20:00-->
+
+                      <!--</article>-->
+                  <!--</section>-->
               </article>
         </section>
 
+        <!--DESCRIPCIONES SERVICIOS-->
         <section class="desc">
             <article>
                 <section>
@@ -150,6 +194,7 @@
             </article>
         </section>
 
+        <!--SECCIÓN SERVICIOS-->
         <section class="servicios" id="serviciosSeccion">
             <article>
                 <h1>SERVICIOS</h1>
@@ -158,6 +203,7 @@
             </article>
         </section>
 
+        <!--LISTADO SERVICIOS-->
         <section class="listadoServicios" id="listadoServicios">
 
             <!--servicios peluqueria-->
@@ -299,6 +345,7 @@
 
         </section>
 
+        <!--SECCIÓN EVENTOS-->
         <section class="eventos" id="eventosSeccion">
             <article>
                 <h1>Eventos filomax</h1>
@@ -307,6 +354,7 @@
             </article>
         </section>
 
+        <!--LISTADO ARTISTAS-->
         <section class="artistas">
             <!--<h2>Algunos de nuestros eventos</h2>-->
             <section class="contendorArtistas">
@@ -405,10 +453,11 @@
             </section>
         </section>
 
+        <!--MAPA-->
         <section class="mapa">
             <div id="map"></div>
             <div id="LeyendaMapa" class="hidden-xs">
-                <img src="images/white2.png" style="display: block;padding-bottom: 16px;margin-left: auto;margin-right: auto" width="25%">
+                <img src="images/white2.png" style="display: block;padding-bottom: 16px;margin-left: auto;margin-right: auto" >
                 <span>Dirección :</span>
                 <p style="padding-bottom: 0px;margin-bottom: 0px">C/Blasco de Garay 25, Madrid 28015</p>
                 <p>Metro Arguelles - Islas Filipinas</p>
@@ -421,6 +470,7 @@
             </div>
         </section>
 
+        <!--FOOTER-->
         <footer id="footer">
                 <img src="images/logo1.png" class="centrado">
                 <h4>FILOMAX SHAVING COMPANY</h4>
@@ -457,7 +507,7 @@
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
-    <script src="./js/scroll.js"></script>
+    <!--<script src="./js/scroll.js"></script>-->
     <script src="./js/canvasjs.js"></script>
 
 

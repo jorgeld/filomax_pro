@@ -1,0 +1,733 @@
+section.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh auto 100vh auto auto auto 100vh auto;
+}
+
+/*********************    PORTADA     ******************/
+section.contenedor section.portada{
+    position: relative;
+    background-image: url("/images/fachada.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+section.contenedor section.portada > canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+section.contenedor section.portada > span{
+    border: solid 1px white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.50);
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+    margin-top : 16px
+}
+
+section.contenedor section.portada > span > a {
+    color: white;
+    text-decoration: none;
+}
+
+section.contenedor section.portada > span:hover{
+    background-color: rgba(16, 16, 16, 0.90);
+}
+
+section.contenedor section.portada img{
+
+    justify-self: center;
+    align-self: center;
+    width: 300px;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+section.contenedor section.portada article.info{
+    display: grid;
+    grid-template-rows: 50% 1fr 35%;
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+}
+
+/*LOGO PORTADA*/
+section.contenedor section.portada article.info #logoPortada{
+    grid-row: 1 / 2;
+    display: grid;
+}
+
+section.contenedor section.portada article.info #logoPortada > * {
+    justify-self: center;
+    align-self: center;
+}
+
+/*BOTON RESERVAS*/
+section.contenedor section.portada article.info #botonReserva{
+    display: grid;
+    grid-row: 2 / 3;
+}
+
+section.contenedor section.portada article.info #botonReserva > article {
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto 1fr;
+    grid-gap: 16px;
+
+    padding: 16px;
+    margin: 16px;
+    background-color: #ffffff;
+    border-radius: 100px 100px 100px 100px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+
+    justify-self: center;
+    align-self: center;
+
+}
+
+section.contenedor section.portada article.info #botonReserva > article:hover{
+    background-color: #c5c5c5;
+}
+
+section.contenedor section.portada article.info #botonReserva > article > * {
+    margin: 0px;
+    padding: 0px;
+}
+
+section.contenedor section.portada article.info #botonReserva > article h3{
+    font-weight: bolder;
+    align-self: center;
+    justify-self: initial;
+    padding-right: 16px;
+}
+
+section.contenedor section.portada article.info #botonReserva > article img{
+    width: 40px;
+     justify-self: initial;
+     align-self: center;
+     opacity: 100;
+     transition: all 0.2s ease-in-out;
+}
+
+
+    /*LOCALES*/
+section.contenedor section.portada article.info #locales{
+    grid-row: 3 / 4;
+    display: grid;
+    grid-gap: 8px;
+    margin: 6px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+section.contenedor section.portada article.info #locales > article{
+    background-color: #101010;
+    color: white;
+    border-radius: 5px;
+    border: solid 1px #181818;
+
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-column: 10% 90%;
+    padding: 3px;
+}
+
+section.contenedor section.portada article.info #locales > article > h3{
+    text-align: center;
+    padding: 12px 0 12px 0;
+
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+
+    align-items: center;
+    justify-content: center;
+}
+
+section.contenedor section.portada article.info #locales > article > span {
+    padding: 6px;
+}
+
+section.contenedor section.portada article.info #locales > article > span > p {
+    font-size: 10px;
+    color: #999999;
+}
+
+section.contenedor section.portada article.info #locales > article span.horarios{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+
+}
+
+section.contenedor section.portada article.info #locales > article span.horarios > span>p {
+    font-size: 10px;
+    color: #999999;
+}
+
+/*section.contenedor section.portada article.info section{*/
+    /*display: grid;*/
+    /*grid-template-rows: 1fr;*/
+    /*grid-template-columns: 44% 56%;*/
+    /*background-color: rgba(0,0,0,0.5);*/
+    /*color: white;*/
+    /*text-shadow: 2px 1px 2px black;*/
+    /*padding: 8px;*/
+/*}*/
+
+section.contenedor section.portada article.info section.sectionBotonReserva{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    text-shadow: 2px 1px 2px black;
+    padding: 8px;
+}
+
+section.contenedor section.portada article.info section > span{
+
+    justify-self: center;
+
+    border: solid 1px white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.50);
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+section.contenedor section.portada article.info section span:hover{
+    background-color: rgba(16, 16, 16, 0.90);
+}
+
+section.contenedor section.portada article.info section span > a {
+    color: white;
+    text-decoration: none;
+}
+
+section.contenedor section.portada article.info section h4{
+    justify-self: center;
+    align-self: center;
+    text-transform: uppercase;
+    color: #9b9b9b;
+    font-size: 12px;
+}
+
+section.contenedor section.portada article.info section article.masInfo{
+    justify-self: center;
+    align-self: center;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10px;
+}
+
+
+/******************** DESC ***********************************/
+section.contenedor section.desc{
+    background: linear-gradient(#000000, #101010,#101010,#101010, #000000);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    border-top: solid 1px #181818;
+    border-bottom: solid 1px #181818;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+section.contenedor section.desc article{
+    grid-column: span 2;
+    margin: 16px;
+    background-color: #101010;
+    border: solid 1px #403f3f;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+
+section.contenedor section.desc article:nth-child(2){
+    /*grid-column: 2 / 4;*/
+}
+
+section.contenedor section.desc article section{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 32px;
+}
+
+section.contenedor section.desc article section h2{
+    justify-self: start;
+    align-self: center;
+    text-decoration: underline;
+}
+
+section.contenedor section.desc article section span{
+    justify-self: center;
+    align-self: center;
+}
+
+section.contenedor section.desc article > span{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.contenedor section.desc article > h4{
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    text-transform: uppercase;
+}
+
+section.contenedor section.desc article > h4 > a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 1px 2px black;
+    transition: color 0.2s ease-out;
+}
+
+section.contenedor section.desc article > h4 > a:hover{
+    color: #777;
+}
+
+section.contenedor footer{
+    background: white;
+}
+
+/************   eventos   **********************************/
+section.contenedor section.eventos{
+    background-image: url("/images/fiesta2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+section.contenedor section.eventos > article {
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 16px;
+    padding: 20%;
+}
+
+section.contenedor section.eventos > article > h1{
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 1px 2px black;
+    font-size: 50px;
+    text-align: center
+}
+
+section.contenedor section.eventos > article > p{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 1px 2px black;
+    font-size: 14px
+}
+
+section.contenedor section.eventos > article > span{
+    justify-self: center;
+    align-self: center;
+    border: solid 1px white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.50);
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+section.contenedor section.eventos > article > span > a {
+    color: white;
+    text-decoration: none;
+}
+
+section.contenedor section.eventos > article > span:hover{
+    background-color: rgba(16, 16, 16, 0.90);
+}
+
+/************   artistas   **********************************/
+section.contenedor section.artistas{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background: linear-gradient(#000000, #101010,#101010,#101010, #000000);
+    padding:64px;
+}
+
+section.contenedor section.artistas > h2{
+    color: white;
+    text-shadow: 2px 1px 2px black;
+    padding-bottom: 64px;
+}
+
+section.contenedor section.artistas section.contendorArtistas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:center;
+}
+
+section.contenedor section.artistas section.contendorArtistas > article{
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 4px;
+    border: solid 1px #403f3f;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    cursor: pointer;
+}
+
+section.contenedor section.artistas section.contendorArtistas > article > span.sombra{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.99),rgba(0, 0, 0, 0.81), rgba(0, 0, 0, 0.6),transparent,transparent, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.81),rgba(0, 0, 0, 0.99));
+    transition: 0.3s ease-in-out;
+}
+
+section.contenedor section.artistas section.contendorArtistas > article:hover >span.sombra{
+    background-color: rgba(0, 0, 0, 0.81);
+}
+
+section.contenedor section.artistas section.contendorArtistas > article > p {
+    color: white;
+    text-shadow: 2px 1px 2px black;
+    padding: 0 16px 16px 16px;
+    z-index: 1;
+}
+
+section.contenedor section.artistas section.contendorArtistas > article > span.icono {
+    padding: 0 16px 16px 16px;
+    text-align: end;
+    z-index: 1;
+}
+
+section.contenedor section.artistas section.contendorArtistas > article > span.icono > a {
+    color: white;
+    text-shadow: 2px 1px 2px black;
+    transition: 0.3s ease-in-out;
+}
+
+section.contenedor section.artistas section.contendorArtistas > article > span.icono > a:hover{
+    color: #777;
+}
+
+section.contenedor section.artistas section.contendorArtistas > article > header{
+    display: grid;
+    grid-template-rows: auto auto;
+    z-index: 1;
+}
+
+section.contenedor section.artistas section.contendorArtistas > article > header > h3 {
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 1px 2px black;
+    padding: 16px 16px 0 16px;
+}
+
+section.contenedor section.artistas section.contendorArtistas > article > header > p {
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 1px 2px black;
+    padding: 0 16px 16px 16px;
+}
+
+/************   servicios   **********************************/
+section.contenedor section.servicios{
+    background-image: url("/images/bombilla.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+section.contenedor section.servicios > article {
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 16px;
+    padding: 5%;
+}
+
+section.contenedor section.servicios > article > h1{
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 1px 2px black;
+    font-size: 50px;
+    text-align: center
+}
+
+section.contenedor section.servicios > article > p{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 1px 2px black;
+    font-size: 14px
+}
+
+section.contenedor section.servicios > article > span{
+    justify-self: center;
+    align-self: center;
+    border: solid 1px white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.50);
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+section.contenedor section.servicios > article > span > a {
+    color: white;
+    text-decoration: none;
+}
+
+section.contenedor section.servicios > article > span:hover{
+    background-color: rgba(16, 16, 16, 0.90);
+}
+
+/************   listado de servicios   **********************************/
+section.contenedor section.listadoServicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#000000, #101010,#101010,#101010, #000000);
+    padding:32px;
+}
+
+section.contenedor section.listadoServicios section{
+    border: 1px solid #403f3f54;
+    background-color: #15151538;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+section.contenedor section.listadoServicios section span{
+    display: grid;
+    grid-gap: 12px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+section.contenedor section.listadoServicios section h3{
+    color: white;
+    padding-bottom: 16px;
+    text-transform: uppercase;
+}
+
+section.contenedor section.listadoServicios section article{
+    background-color: #1f1f1fa6;
+    border-radius: 5px;
+    padding: 12px;
+    border-bottom: 1px solid #2c2c2c;
+    border-right: 1px solid #2c2c2c;
+}
+
+section.contenedor section.listadoServicios section article h5{
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #dbdbdb;
+    font-weight: lighter;
+
+}
+
+section.contenedor section.listadoServicios section article p{
+    margin: 0px;
+    color: #999999;
+}
+
+    /************   mapa   **********************************/
+section.contenedor section.mapa{
+    background-color: #101010;
+    position: relative;
+}
+
+/************   footer   ********************************/
+footer{
+    padding: 80px 0 80px 0;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+
+/*PANTALLAS GRANDES*/
+@media (min-width: 1025px){
+
+    section.contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100vh auto 100vh auto 100vh auto 100vh auto;
+    }
+
+    /*********************    PORTADA     ******************/
+    section.contenedor section.portada{
+        grid-template-rows: 80% 20%;
+    }
+
+    section.contenedor section.portada img{
+        padding-top: 16px;
+        width: 600px;
+    }
+
+    section.contenedor section.portada article.info{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0px;
+    }
+
+    section.contenedor section.portada article.info section{
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    section.contenedor section.portada article.info section h4{
+        font-size: 14px;
+        padding: 32px;
+    }
+
+    section.contenedor section.portada article.info section article.masInfo{
+        justify-self: center;
+        align-self: flex-start;
+        text-transform: none;
+        text-align: center;
+        font-size: 14px;
+
+    }
+
+    section.contenedor section.portada article.info section article.masInfo span{
+        font-size: 35px;
+    }
+
+    /******************** DESC ***********************************/
+    section.contenedor section.desc{
+        padding: 64px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    section.contenedor section.desc article{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    section.contenedor section.desc article:nth-child(2){
+        grid-column: 2 / 4;
+    }
+
+    /************   eventos   **********************************/
+
+    section.contenedor section.eventos > article > h1{
+        font-size: 100px;
+    }
+
+    section.contenedor section.eventos > article > p{
+        font-size: 18px
+    }
+
+    section.contenedor section.eventos > article > span{
+        width: 50%;
+    }
+
+    /************   SERVICIOS   **********************************/
+
+    section.contenedor section.servicios > article > h1{
+        font-size: 100px;
+    }
+
+    section.contenedor section.servicios > article > p{
+        font-size: 18px
+    }
+
+    section.contenedor section.servicios > article > span{
+        width: 50%;
+    }
+
+    section.contenedor section.servicios > article {
+        padding: 20%;
+    }
+
+    /************   barberos   **********************************/
+    section.contenedor section.barberos section.contenedorBarberos > article {
+        width: 300px;
+        height: 500px;
+    }
+
+    section.contenedor section.barberos section.contenedorBarberos{
+        padding-bottom: 64px;
+    }
+
+    /************ servicios ***************************************/
+    section.contenedor section.listadoServicios{
+        padding:64px;
+    }
+
+    section.contenedor section.listadoServicios section span{
+        display: grid;
+        grid-gap: 12px;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /*section.contenedor section.listadoServicios > article{*/
+        /*width: 350px;*/
+        /*height: 125px;*/
+    /*}*/
+
+    section.contenedor section.listadoServicios > article > section > h3 {
+        /*font-size: 16px;*/
+    }
+
+    section.contenedor section.listadoServicios > article > section > p {
+        /*font-size: 10px;*/
+    }
+
+}
+
+
