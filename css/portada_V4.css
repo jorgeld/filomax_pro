@@ -160,11 +160,13 @@ section.contenedor section.portada article.info #locales > article > h3{
 
 section.contenedor section.portada article.info #locales > article > span {
     padding: 6px;
+    border-bottom: solid 1px #181818;
 }
 
 section.contenedor section.portada article.info #locales > article > span > p {
     font-size: 10px;
     color: #999999;
+    margin: 0px;
 }
 
 section.contenedor section.portada article.info #locales > article span.horarios{
@@ -177,6 +179,7 @@ section.contenedor section.portada article.info #locales > article span.horarios
 section.contenedor section.portada article.info #locales > article span.horarios > span>p {
     font-size: 10px;
     color: #999999;
+    margin: 0px;
 }
 
 /*section.contenedor section.portada article.info section{*/
@@ -607,17 +610,36 @@ footer{
 
     /*********************    PORTADA     ******************/
     section.contenedor section.portada{
-        grid-template-rows: 80% 20%;
+        /*grid-template-rows: 50% 50%;*/
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
     }
 
+
+
+
+    /*grid-gap: 16px;*/
+    /*margin-right: 25%;*/
+    /*margin-left: 25%;*/
+
     section.contenedor section.portada img{
-        padding-top: 16px;
-        width: 600px;
+        padding-top: 32px;
+        width: 500px;
+    }
+
+    section.contenedor section.portada article.info #locales{
+        grid-row: 3 / 4;
+        display: grid;
+        grid-gap: 16px;
+        margin-right: 20%;
+        margin-left: 20%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 
     section.contenedor section.portada article.info{
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-gap: 0px;
     }
 
