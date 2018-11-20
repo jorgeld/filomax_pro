@@ -2,7 +2,8 @@
 .navbar-default{
     transition: all 0.2 ease-in-out;
     /**background-color: rgba(236,236,236,0.50) !important;**/
-    background-color: rgba(0,0,0,0.3) !important;
+    /*background-color: rgba(0,0,0,0.3) !important;*/
+    background-color: #101010 !important;
     /*border:none !important;*/
     border-color: rgba(16,16,16,0.2) !important;
     boren-bottom : solid 1px !important;

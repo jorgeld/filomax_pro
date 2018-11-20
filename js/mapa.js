@@ -196,7 +196,7 @@ function initMap() {
     var myLatlng = new google.maps.LatLng(40.432602, -3.711673);
     var mapOtions = {
         center: myLatlng,
-        zoom: 16,
+        zoom: 13,
         scrollwheel:false,
         mapTypeControlOptions: {
             mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
@@ -212,8 +212,16 @@ function initMap() {
         title: 'Hello World!'
     });
 
+    var marker2 = new google.maps.Marker({
+        position: new google.maps.LatLng(40.4107833,-3.6986464),
+        map: map,
+        icon: image,
+        title: 'Hello World!'
+    });
+
     // To add the marker to the map, call setMap();
     marker.setMap(map);
+    marker2.setMap(map);
 
     //Associate the styled map with the MapTypeId and set it to display.
     map.mapTypes.set('map_style', styledMap);

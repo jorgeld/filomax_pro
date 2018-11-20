@@ -1,7 +1,7 @@
 section.contenedor{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100vh auto 100vh auto auto auto 100vh auto;
+    grid-template-rows: 100vh auto 100vh auto auto auto 50vh auto;
 }
 
 /*********************    PORTADA     ******************/
@@ -79,7 +79,12 @@ section.contenedor section.portada article.info #botonReserva{
     grid-row: 2 / 3;
 }
 
-section.contenedor section.portada article.info #botonReserva > article {
+section.contenedor section.portada article.info #botonReserva > a {
+    display: grid;
+    text-decoration: none;
+}
+
+section.contenedor section.portada article.info #botonReserva > a > article {
 
     display: grid;
     grid-template-rows: 1fr;
@@ -92,6 +97,7 @@ section.contenedor section.portada article.info #botonReserva > article {
     border-radius: 100px 100px 100px 100px;
 
     cursor: pointer;
+    color: #101010;
 
     transition: all 0.2s ease-in-out;
 
@@ -100,23 +106,23 @@ section.contenedor section.portada article.info #botonReserva > article {
 
 }
 
-section.contenedor section.portada article.info #botonReserva > article:hover{
+section.contenedor section.portada article.info #botonReserva > a >  article:hover{
     background-color: #c5c5c5;
 }
 
-section.contenedor section.portada article.info #botonReserva > article > * {
+section.contenedor section.portada article.info #botonReserva > a >  article > * {
     margin: 0px;
     padding: 0px;
 }
 
-section.contenedor section.portada article.info #botonReserva > article h3{
+section.contenedor section.portada article.info #botonReserva > a >  article h3{
     font-weight: bolder;
     align-self: center;
     justify-self: initial;
     padding-right: 16px;
 }
 
-section.contenedor section.portada article.info #botonReserva > article img{
+section.contenedor section.portada article.info #botonReserva > a >  article img{
     width: 40px;
      justify-self: initial;
      align-self: center;
@@ -165,6 +171,7 @@ section.contenedor section.portada article.info #locales > article > span {
 
 section.contenedor section.portada article.info #locales > article > span > p {
     font-size: 10px;
+    text-transform: uppercase;
     color: #999999;
     margin: 0px;
 }
@@ -181,16 +188,6 @@ section.contenedor section.portada article.info #locales > article span.horarios
     color: #999999;
     margin: 0px;
 }
-
-/*section.contenedor section.portada article.info section{*/
-    /*display: grid;*/
-    /*grid-template-rows: 1fr;*/
-    /*grid-template-columns: 44% 56%;*/
-    /*background-color: rgba(0,0,0,0.5);*/
-    /*color: white;*/
-    /*text-shadow: 2px 1px 2px black;*/
-    /*padding: 8px;*/
-/*}*/
 
 section.contenedor section.portada article.info section.sectionBotonReserva{
     display: grid;
@@ -605,7 +602,7 @@ footer{
 
     section.contenedor{
         grid-template-columns: 1fr;
-        grid-template-rows: 100vh auto 100vh auto 100vh auto 100vh auto;
+        grid-template-rows: 100vh auto 100vh auto 100vh auto 80vh auto;
     }
 
     /*********************    PORTADA     ******************/
@@ -645,7 +642,7 @@ footer{
 
     section.contenedor section.portada article.info section{
         display: grid;
-        grid-template-rows: auto 1fr;
+        grid-template-rows: 1fr;
         grid-template-columns: 1fr;
     }
 
