@@ -46,21 +46,52 @@ section.contenedor section.portada > span:hover{
     background-color: rgba(16, 16, 16, 0.90);
 }
 
+/**
 section.contenedor section.portada img{
-
     justify-self: center;
     align-self: center;
-    width: 300px;
+    width: 150px;
     opacity: 0;
     transition: all 0.2s ease-in-out;
 }
 
 section.contenedor section.portada article.info{
     display: grid;
-    grid-template-rows: 50% 1fr 35%;
+    grid-template-rows: 35% 1fr 35%;
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+    margin-bottom: 100px;
+}
+
+**/
+
+
+section.contenedor section.portada img{
+
+    justify-self: center;
+    align-self: center;
+    width: 150px;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+section.contenedor section.portada article.info{
+    display: grid;
+    grid-template-rows: 35% 1fr auto;
     grid-template-columns: 1fr;
     grid-gap: 8px;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /*LOGO PORTADA*/
 section.contenedor section.portada article.info #logoPortada{
@@ -148,7 +179,7 @@ section.contenedor section.portada article.info #locales > article{
     border: solid 1px #181818;
 
     display: grid;
-    grid-template-rows: auto auto auto 1fr;
+    grid-template-rows: 1fr auto auto auto;
     grid-template-column: 10% 90%;
     padding: 3px;
 }
@@ -621,7 +652,8 @@ footer{
 
     section.contenedor section.portada img{
         padding-top: 32px;
-        width: 500px;
+        width: 300px;
+        opacity: 0;
     }
 
     section.contenedor section.portada article.info #locales{
@@ -635,10 +667,34 @@ footer{
     }
 
     section.contenedor section.portada article.info{
-        grid-template-rows: 1fr;
+        display: grid;
+        grid-template-rows: 1fr auto auto;
         grid-template-columns: 1fr;
-        grid-gap: 0px;
+        grid-gap: 8px;
     }
+
+
+
+
+/**
+
+    section.contenedor section.portada img{
+
+        justify-self: center;
+        align-self: center;
+        width: 300px;
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+    }
+
+    section.contenedor section.portada article.info{
+        display: grid;
+        grid-template-rows: 50% 1fr 35%;
+        grid-template-columns: 1fr;
+        grid-gap: 8px;
+    }
+
+    **/
 
     section.contenedor section.portada article.info section{
         display: grid;

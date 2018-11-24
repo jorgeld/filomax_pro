@@ -201,10 +201,10 @@ function initMap() {
         mapTypeControlOptions: {
             mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
         }
-    }
+    };
     var map = new google.maps.Map(document.getElementById('map'),  mapOtions );
 
-    var image = 'images/chinchetablanca.png';
+    var image = 'images/chinchetablanca2.png';
     var marker = new google.maps.Marker({
         position: myLatlng,
         map: map,
@@ -212,11 +212,56 @@ function initMap() {
         title: 'Hello World!'
     });
 
+    var contentStringChamberi = '' +
+        '<section>'+
+        '<img src="images/white2.png" width="16px">'+
+        '<span><h3 style="padding-bottom: 16px">Filomax Chamberí</h3></span>'+
+        '<span>Dirección :</span>'+
+        '<p style="padding-bottom: 0;margin-bottom: 0">C/Blasco de Garay 25, Madrid 28015</p>'+
+        '<p>Metro Arguelles - Islas Filipinas</p>'+
+        '<span>Teléfono:</span>'+
+        '<p> 914 21 66 17</p>'+
+        '<span>Horario:</span>'+
+        '<p>Lunes: 16:00 - 21:00 </p>'+
+        '<p>Martes a Viernes: 11:00 - 14:00 y de 16:00 - 21:00</p>'+
+        '<p>Sabados: 10:00 - 14:00 y de 16:00 - 20:00</p>'+
+        '</section>';
+
+    var infowindowChamberi = new google.maps.InfoWindow({
+        content: contentStringChamberi
+    });
+
+    marker.addListener('click', function() {
+        infowindowChamberi.open(map, marker);
+    });
+
     var marker2 = new google.maps.Marker({
         position: new google.maps.LatLng(40.4107833,-3.6986464),
         map: map,
         icon: image,
         title: 'Hello World!'
+    });
+
+    var contentStringLavapies= '' +
+        '<section>'+
+        '<img src="images/white2.png" width="16px">'+
+        '<span><h3 style="padding-bottom: 16px">Filomax Lavapiés</h3></span>'+
+        '<span>Dirección :</span>'+
+        '<p style="padding-bottom: 0;margin-bottom: 0">C/Infanta Isabel 32, Madrid 28015</p>'+
+        '<span>Teléfono:</span>'+
+        '<p> 912 45 30 17</p>'+
+        '<span>Horario:</span>'+
+        '<p>Lunes: 16:00 - 21:00 </p>'+
+        '<p>Martes a Viernes: 11:00 - 14:00 y de 16:00 - 21:00</p>'+
+        '<p>Sabados: 10:00 - 14:00 y de 16:00 - 20:00</p>'+
+        '</section>';
+
+    var infowindowLavapies = new google.maps.InfoWindow({
+        content: contentStringLavapies
+    });
+
+    marker2.addListener('click', function() {
+        infowindowLavapies.open(map, marker2);
     });
 
     // To add the marker to the map, call setMap();
