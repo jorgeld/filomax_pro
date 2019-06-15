@@ -247,7 +247,7 @@ function initMap() {
         '<img src="images/white2.png" width="16px">'+
         '<span><h3 style="padding-bottom: 16px">Filomax Lavapiés</h3></span>'+
         '<span>Dirección :</span>'+
-        '<p style="padding-bottom: 0;margin-bottom: 0">C/Infanta Isabel 32, Madrid 28015</p>'+
+        '<p style="padding-bottom: 0;margin-bottom: 0">C/Santa Isabel 32, Madrid 28015</p>'+
         '<span>Teléfono:</span>'+
         '<p> 912 45 30 17</p>'+
         '<span>Horario:</span>'+
