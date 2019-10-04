@@ -877,24 +877,50 @@ footer{
         /*font-size: 10px;*/
     }
 
-
-
-    section.contenedor section.listadoServicios2 > div > div > h3 {
-        text-transform: uppercase;
+    section.contenedor section.listadoServicios2 {
+        display: flex;
+        padding: 64px;
     }
 
-    section.contenedor section.listadoServicios2 > div > div > div > div > p.item{
-        /*content: '';*/
-        /*position: absolute;*/
-        /*bottom: .4rem;*/
-        /*width: 100%;*/
-        /*height: 0;*/
-        /*line-height: 0;*/
-        border-bottom: 2px dotted #636363
+    section.contenedor section.listadoServicios2 > section.descListadoServicios2{
+        width: 100%;
+        padding:16px
     }
 
-    section.contenedor section.listadoServicios2 > div > div > div > div > p.price{
-        border-bottom: 2px dotted #000000
+    section.contenedor section.listadoServicios2 > section.descListadoServicios2 > h2 {font-size: 42px}
+
+    section.contenedor section.listadoServicios2 > section.descListadoServicios2 > img {opacity: 0.15}
+
+    section.contenedor section.listadoServicios2 > section.descListadoServicios2 > p {font-size: 18px}
+
+    section.contenedor section.listadoServicios2 section.categorias-container{
+        width: 100%;
+        padding:16px 16px 16px 60px;
+        border-left: solid 1px rgba(0,0,0,0.5)
+    }
+
+    section.contenedor section.listadoServicios2 section.categorias-container > section.categoria {
+        padding-bottom: 16px;
+    }
+
+    section.contenedor section.listadoServicios2 section.categorias-container > section.categoria > article.categoria-listado {
+        padding: 16px;
+    }
+
+    section.contenedor section.listadoServicios2 section.categorias-container > section.categoria > article.categoria-listado > section.categoria-item {
+        display: flex;
+        border-bottom: 2px dotted #636363;
+        padding-bottom: 3px;
+        padding-top: 3px;
+    }
+
+    section.contenedor section.listadoServicios2 section.categorias-container > section.categoria > article.categoria-listado > section.categoria-item > p.categoria-item-name{
+        width: 90%;
+        margin-bottom: 3px
+    }
+    section.contenedor section.listadoServicios2 section.categorias-container > section.categoria > article.categoria-listado > section.categoria-item > p.categoria-item-price{
+        width: 10%;
+        margin-bottom: 3px
     }
 
 }
