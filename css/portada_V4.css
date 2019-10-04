@@ -530,58 +530,64 @@ section.contenedor section.servicios > article > span:hover{
 
 /************   listado de servicios   **********************************/
 section.contenedor section.listadoServicios{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
     background: linear-gradient(#000000, #101010,#101010,#101010, #000000);
     padding:32px;
 }
 
-section.contenedor section.listadoServicios section{
-    border: 1px solid #403f3f54;
-    background-color: #15151538;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    width: 100%;
-    padding: 16px;
-    margin-bottom: 16px;
+.white{
+    color: white !important;
 }
 
-section.contenedor section.listadoServicios section span{
-    display: grid;
-    grid-gap: 12px;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-}
 
-section.contenedor section.listadoServicios section h3{
-    color: white;
-    padding-bottom: 16px;
-    text-transform: uppercase;
-}
 
-section.contenedor section.listadoServicios section article{
-    background-color: #1f1f1fa6;
-    border-radius: 5px;
-    padding: 12px;
-    border-bottom: 1px solid #2c2c2c;
-    border-right: 1px solid #2c2c2c;
-}
+/*section.contenedor section.listadoServicios section{*/
+    /*border: 1px solid #403f3f54;*/
+    /*background-color: #15151538;*/
+    /*-webkit-border-radius: 5px;*/
+    /*-moz-border-radius: 5px;*/
+    /*border-radius: 5px;*/
+    /*width: 100%;*/
+    /*padding: 16px;*/
+    /*margin-bottom: 16px;*/
+/*}*/
 
-section.contenedor section.listadoServicios section article h5{
-    text-transform: uppercase;
-    font-weight: bolder;
-    color: #dbdbdb;
-    font-weight: lighter;
+/*section.contenedor section.listadoServicios section span{*/
+    /*display: grid;*/
+    /*grid-gap: 12px;*/
+    /*grid-template-rows: 1fr;*/
+    /*grid-template-columns: 1fr;*/
+/*}*/
 
-}
+/*section.contenedor section.listadoServicios section h3{*/
+    /*color: white;*/
+    /*padding-bottom: 16px;*/
+    /*text-transform: uppercase;*/
+/*}*/
 
-section.contenedor section.listadoServicios section article p{
-    margin: 0px;
-    color: #999999;
-}
+/*section.contenedor section.listadoServicios section article{*/
+    /*background-color: #1f1f1fa6;*/
+    /*border-radius: 5px;*/
+    /*padding: 12px;*/
+    /*border-bottom: 1px solid #2c2c2c;*/
+    /*border-right: 1px solid #2c2c2c;*/
+/*}*/
+
+/*section.contenedor section.listadoServicios section article h5{*/
+    /*text-transform: uppercase;*/
+    /*font-weight: bolder;*/
+    /*color: #dbdbdb;*/
+    /*font-weight: lighter;*/
+
+/*}*/
+
+/*section.contenedor section.listadoServicios section article p{*/
+    /*margin: 0px;*/
+    /*color: #999999;*/
+/*}*/
 
 /************   listado de servicios 2   **********************************/
 section.contenedor section.listadoServicios2{
@@ -766,7 +772,7 @@ footer{
 
 
     section.contenedor section.servicios > article > section {
-        padding-top: 5%;
+        padding: 120px 64px 120px 64px;
         display: flex
     }
 
@@ -853,72 +859,65 @@ footer{
     }
 
     /************ servicios ***************************************/
-    section.contenedor section.listadoServicios{
-        padding:64px;
-    }
-
-    section.contenedor section.listadoServicios section span{
-        display: grid;
-        grid-gap: 12px;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    /*section.contenedor section.listadoServicios > article{*/
-        /*width: 350px;*/
-        /*height: 125px;*/
+    /*section.contenedor section.listadoServicios{*/
+        /*padding:64px;*/
     /*}*/
 
-    section.contenedor section.listadoServicios > article > section > h3 {
-        /*font-size: 16px;*/
-    }
+    /*section.contenedor section.listadoServicios section span{*/
+        /*display: grid;*/
+        /*grid-gap: 12px;*/
+        /*grid-template-rows: 1fr;*/
+        /*grid-template-columns: 1fr 1fr 1fr;*/
+    /*}*/
 
-    section.contenedor section.listadoServicios > article > section > p {
-        /*font-size: 10px;*/
-    }
 
     section.contenedor section.listadoServicios2 {
         display: flex;
-        padding: 64px;
+        padding: 120px 64px 120px 64px;
     }
 
-    section.contenedor section.listadoServicios2 > section.descListadoServicios2{
+    section.contenedor section.listadoServicios {
+        display: flex;
+        padding: 120px 64px 120px 64px;
+    }
+
+    section.descListadoServicios{
         width: 100%;
         padding:16px
     }
 
-    section.contenedor section.listadoServicios2 > section.descListadoServicios2 > h2 {font-size: 42px}
+    section.descListadoServicios > h2 {font-size: 42px}
 
-    section.contenedor section.listadoServicios2 > section.descListadoServicios2 > img {opacity: 0.15}
+    section.descListadoServicios > img {opacity: 0.15}
 
-    section.contenedor section.listadoServicios2 > section.descListadoServicios2 > p {font-size: 18px}
+    section.descListadoServicios > p {font-size: 18px}
 
-    section.contenedor section.listadoServicios2 section.categorias-container{
+    section.categorias-container{
         width: 100%;
         padding:16px 16px 16px 60px;
         border-left: solid 1px rgba(0,0,0,0.5)
     }
 
-    section.contenedor section.listadoServicios2 section.categorias-container > section.categoria {
+    section.categorias-container > section.categoria {
         padding-bottom: 16px;
     }
 
-    section.contenedor section.listadoServicios2 section.categorias-container > section.categoria > article.categoria-listado {
+    section.categorias-container > section.categoria > article.categoria-listado {
         padding: 16px;
     }
 
-    section.contenedor section.listadoServicios2 section.categorias-container > section.categoria > article.categoria-listado > section.categoria-item {
+    section.categorias-container > section.categoria > article.categoria-listado > section.categoria-item {
         display: flex;
         border-bottom: 2px dotted #636363;
         padding-bottom: 3px;
         padding-top: 3px;
     }
 
-    section.contenedor section.listadoServicios2 section.categorias-container > section.categoria > article.categoria-listado > section.categoria-item > p.categoria-item-name{
+    section.categorias-container > section.categoria > article.categoria-listado > section.categoria-item > p.categoria-item-name{
         width: 90%;
         margin-bottom: 3px
     }
-    section.contenedor section.listadoServicios2 section.categorias-container > section.categoria > article.categoria-listado > section.categoria-item > p.categoria-item-price{
+    section.categorias-container > section.categoria > article.categoria-listado > section.categoria-item > p.categoria-item-price{
         width: 10%;
         margin-bottom: 3px
     }
