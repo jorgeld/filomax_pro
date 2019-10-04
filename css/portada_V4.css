@@ -1,7 +1,7 @@
 section.contenedor{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100vh auto auto auto auto auto 50vh auto;
+    grid-template-rows: 100vh auto auto auto auto auto auto 50vh auto;
 }
 
 /*********************    PORTADA     ******************/
@@ -46,26 +46,6 @@ section.contenedor section.portada > span:hover{
     background-color: rgba(16, 16, 16, 0.90);
 }
 
-/**
-section.contenedor section.portada img{
-    justify-self: center;
-    align-self: center;
-    width: 150px;
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-}
-
-section.contenedor section.portada article.info{
-    display: grid;
-    grid-template-rows: 35% 1fr 35%;
-    grid-template-columns: 1fr;
-    grid-gap: 8px;
-    margin-bottom: 100px;
-}
-
-**/
-
-
 section.contenedor section.portada img{
 
     justify-self: center;
@@ -81,17 +61,6 @@ section.contenedor section.portada article.info{
     grid-template-columns: 1fr;
     grid-gap: 8px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /*LOGO PORTADA*/
 section.contenedor section.portada article.info #logoPortada{
@@ -614,6 +583,17 @@ section.contenedor section.listadoServicios section article p{
     color: #999999;
 }
 
+/************   listado de servicios 2   **********************************/
+section.contenedor section.listadoServicios2{
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    background: linear-gradient(#cfcfcf, #ffffff, #ffffff, #c1c1c1);
+    border-bottom: solid 1px white;
+    padding:32px;
+}
+
     /************   mapa   **********************************/
 section.contenedor section.mapa{
     background-color: #101010;
@@ -633,7 +613,7 @@ footer{
 
     section.contenedor{
         grid-template-columns: 1fr;
-        grid-template-rows: 100vh auto auto auto 100vh auto 80vh auto;
+        grid-template-rows: 100vh auto auto auto auto 100vh auto 80vh auto;
     }
 
     /*********************    PORTADA     ******************/
@@ -895,6 +875,26 @@ footer{
 
     section.contenedor section.listadoServicios > article > section > p {
         /*font-size: 10px;*/
+    }
+
+
+
+    section.contenedor section.listadoServicios2 > div > div > h3 {
+        text-transform: uppercase;
+    }
+
+    section.contenedor section.listadoServicios2 > div > div > div > div > p.item{
+        /*content: '';*/
+        /*position: absolute;*/
+        /*bottom: .4rem;*/
+        /*width: 100%;*/
+        /*height: 0;*/
+        /*line-height: 0;*/
+        border-bottom: 2px dotted #636363
+    }
+
+    section.contenedor section.listadoServicios2 > div > div > div > div > p.price{
+        border-bottom: 2px dotted #000000
     }
 
 }
